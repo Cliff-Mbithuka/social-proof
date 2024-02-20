@@ -1,25 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-:root{
-    --Very-Dark-Magenta: hsl(300, 43%, 22%);
---Soft-Pink: hsl(333, 80%, 67%);
---Dark-Grayish-Magenta: hsl(303, 10%, 53%);
---Light-Grayish-Magenta: hsl(300, 24%, 96%);
---White: hsl(0, 0%, 100%);
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
 }
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body{
-    font-size: 16px;
-    font-family: "League Spartan", sans-serif;
+body {
+  font-size: 16px;
+  font-family: "League Spartan", sans-serif;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 5em auto;
+}
+p {
+  line-height: 1.5em;
+}
+.top {
+  display: flex;
+  width: 100%;
+}
+.bottom {
+  display: flex;
+}
+.left {
+  width: 50%;
+}
+.right {
+  position: relative;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+.left p {
+  margin: 2em 0;
+}
+.ratings {
+  display: flex;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.ratings p {
+  margin-left: 16px;
+  align-items: center;
+  text-align: center;
+}
+.ratings img {
+  margin: 3px;
+}
+/* .ratings:first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ratings:nth-child(2){
+    top: 30%;
+    left: 3em;
+    position: absolute;
+}
+.ratings:nth-child(3){
+    position: absolute;
+    left: 5em;
+    top: 45%;
+} */
+.bottom {
+  /*display: flex; 
+   /*flex-wrap: wrap; */
+  gap: 20px;
+}
+.comment {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  /* flex-basis: 60em; */
+  border-radius: 10px;
+  /* max-width: 340px;*/
+  justify-content: space-between;
+  padding: 30px;
+}
+span {
+  color: var(--Soft-Pink);
+}
+.identity {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.identity img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+h4 {
+  font-weight: bold;
+  margin-bottom: 6px;
 }
