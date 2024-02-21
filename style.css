@@ -77,6 +77,10 @@ h1 {
 }
 .middle{
   margin: 0 20px;
+  margin-top: 15px;
+}
+.end{
+  margin-top: 33px;
 }
 span {
   color: var(--Soft-Pink);
